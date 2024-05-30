@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    background-color: #333;
+    color: #e7e7e7;
+}
+
+.circle-image {
+    margin-top: 3%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: #9e4caf;
+    border-width: 5px;
+    border-style: solid;
+    background-image: url('https://media.discordapp.net/attachments/1114921641726726155/1245829312712802385/4214-cat.gif?ex=665a2c76&is=6658daf6&hm=4a4dd8e10aed01998942545088776968e3a77dd026a47206852d0f4ffc4ccec6&='); /* Kép hivatkozása */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.light-theme {
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #9e4caf;
+    color: #e7e7e7;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #834191;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+}
