@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: background-color 0.3s ease;
     background-color: #333;
     color: #e7e7e7;
@@ -18,50 +18,45 @@ body {
     margin: 0 auto;
 }
 
-
-.container {
+.nev {
     text-align: center;
-    padding: 20px;
+    margin-bottom: 1px; 
 }
 
-.light-theme {
-    background-color: #e7e7e7;
-    color: #333;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.dark-theme {
-    background-color: #e7e7e7;
-    color: #333;
+.image-container {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px
 }
 
+.image-container img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
 
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 40px;
     border-radius: 30px;
-    background-color: #9e4caf;
-    color: #e7e7e7;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-button:hover {
+    z-index: -1;
     background-color: #834191;
+    transition: background-color 0.3s ease;
 }
 
-button:focus {
-    outline: none;
-}
-
-button:active {
-    transform: translateY(2px);
-}
-
-h3 {
+h1 {
     text-align: center;
-    color: #333;
 }
