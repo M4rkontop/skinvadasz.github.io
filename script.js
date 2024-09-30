@@ -1,48 +1,18 @@
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
+function showMember(title, description, imageSrc) {
+    const image = document.getElementById('image');
+    const titleElement = document.getElementById('title');
+    const descriptionElement = document.getElementById('description');
 
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-theme');
-    body.classList.toggle('light-theme');
-    
-    const currentTheme = body.classList.contains('dark-theme') ? 'Sötét Téma' : 'Világos Téma';
-    themeToggle.textContent = currentTheme;
-});
+    // Start fading out the current image
+    image.classList.add('fade-out');
 
-themeToggle.textContent = 'Világos téma';
+    // After 500ms (duration of the fade out), change the image source and text
+    setTimeout(() => {
+        image.src = imageSrc;
+        titleElement.innerText = title;
+        descriptionElement.innerText = description;
 
-
-document.getElementById('scrollButton').addEventListener('click', function() {
-    document.querySelector('.box').scrollIntoView({ 
-        behavior: 'smooth' 
-    });
-});
-
-document.getElementById('topButton').addEventListener('click', function() {
-    // Az oldal tetejére görgetés
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-document.getElementById('menuButton').addEventListener('click', function() {
-    const navbarLinks = document.querySelector('.navbar-links');
-    const menuButton = document.getElementById('menuButton');
-    
-    if (navbarLinks.style.display === 'flex') {
-        navbarLinks.style.maxHeight = '0';
-        navbarLinks.style.opacity = '0';
-        menuButton.classList.remove('rotate');
-        setTimeout(() => {
-            navbarLinks.style.display = 'none';
-        }, 500); // Megvárjuk az átmenet végét
-    } else {
-        navbarLinks.style.display = 'flex';
-        setTimeout(() => {
-            navbarLinks.style.maxHeight = '300px';
-            navbarLinks.style.opacity = '1';
-            menuButton.classList.add('rotate');
-        }, 10); // Kis késleltetés az átmenet indításához
-    }
-});
+        // Start fading in the new image
+        image.classList.remove('fade-out');
+    }, 500); // Same as the transition duration in CSS
+}
