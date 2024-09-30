@@ -3,59 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4rkontop</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Chorus | 1.18+</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/choruslogo.png">
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 </style>
 <body>
+    <header>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=8EZKOLqcpC_eBoQM"><img src="kepek/IMG_0222.png" alt="Header Image"></a>
+    </header>
+    
+    <div class="main-content">
+        <h1>A szerver fejlesztés alatt!</h1>
+        <a href="https://discord.com/channels/1249317336733974568/1251948508026503250"><button class="gombok">Spoilerek ^^</button></a>
+    
+        <h1 class="csapattagok">Fejlesztők</h1>
 
-    <div id="fomenu"></div>
-
-    <nav class="navbar">
-        <button id="menuButton" class="menu-button">&#9776;</button>
-        <div class="navbar-links" id="navbarLinks">
-            <button id="scrollButton">Rólam</button>
-            <button id="topButton">Ugrás a tetejére</button>
-        </div>
-    </nav>
-
-    <div class="home">
-        <img class="pfp" src="images/catpfp.gif">
-    </div>
-
-    <div class="content">
-        <p style="height: 1000px;"></p>
-    </div>
-
-    <div>
-        <h1 class="nev">M4rkontop</h1>
-        <div class="content">
-            <div class="image-container">
-                <div class="square"></div>
-                <img src="images/badge1.png">
-                <img src="images/badge2.png">
-                <img src="images/badge3.png">
-                <img src="images/badge4.png">
+        <div class="container">
+            <div class="content">
+                <div class="text-content">
+                    <h2 id="title">Majozi (Tulajdonos)</h2>
+                    <p id="description">Majozi vagyok puszi helo</p>
+                </div>
+                <img id="image" class="main-image" src="https://media.discordapp.net/attachments/1290046813268607028/1290051114342809630/majozirender1.png?ex=66fb0d39&is=66f9bbb9&hm=a6df61486234f6d3b21cf82e5e8ef32d28aea7df27b11f7fa03e947d43dd3e35&=&format=webp&quality=lossless&width=633&height=633" alt="Majozi kép">
+        
+                <!-- Team member images as buttons inside the square -->
+                <div class="member-images">
+                    <img src="https://media.discordapp.net/attachments/1290046813268607028/1290047100372914196/majozifej.png?ex=66fb097c&is=66f9b7fc&hm=832439c0e188764a3981227433fd37ac8be0c75a28b1b5842ae07371f0a85a05&=&format=webp&quality=lossless" onclick="showMember('Majozi (Tulajdonos)', 'Majozi vagyok puszi helo', 'https://media.discordapp.net/attachments/1290046813268607028/1290051114342809630/majozirender1.png?ex=66fb0d39&is=66f9bbb9&hm=a6df61486234f6d3b21cf82e5e8ef32d28aea7df27b11f7fa03e947d43dd3e35&=&format=webp&quality=lossless&width=633&height=633')">
+                    <img src="https://media.discordapp.net/attachments/1290046813268607028/1290047100037500939/m4rkfej.png?ex=66fb097c&is=66f9b7fc&hm=d9e670ecd3945367c31f392e7207948a44a26f5238cbc4052c2e278e16512a96&=&format=webp&quality=lossless" onclick="showMember('M4rkontop (Manager)', 'Márk vagyok a tulaj', 'https://cdn.discordapp.com/attachments/1290046813268607028/1290051114795798719/markrender1.png?ex=66fb0d39&is=66f9bbb9&hm=70a3ceef73e4c884e18520af3ed5bf73c55a2cede7b64a2da8ccdf7f844c2c1f&')">
+                    <img src="https://media.discordapp.net/attachments/1290046813268607028/1290333974119317534/secret.png?ex=66fc14a8&is=66fac328&hm=41b6dc0fe1ace0c9d376b61ba7bc5b3b9bd3a1819aea46358c544a6dc86b52e9&=&format=webp&quality=lossless" alt="Tag 3" onclick="showMember('???', 'Secret 🔒', 'https://media.discordapp.net/attachments/1290046813268607028/1290337366317334809/secretrender.png?ex=66fc17d1&is=66fac651&hm=33fd72701b140067b7479fd280b01b257050d2ac3e8168244cadd91538711ae6&=&format=webp&quality=lossless&width=633&height=633')">
+                    <img src="https://media.discordapp.net/attachments/1290046813268607028/1290333974119317534/secret.png?ex=66fc14a8&is=66fac328&hm=41b6dc0fe1ace0c9d376b61ba7bc5b3b9bd3a1819aea46358c544a6dc86b52e9&=&format=webp&quality=lossless" alt="Tag 4" onclick="showMember('???', 'Secret 🔒', 'https://media.discordapp.net/attachments/1290046813268607028/1290337366317334809/secretrender.png?ex=66fc17d1&is=66fac651&hm=33fd72701b140067b7479fd280b01b257050d2ac3e8168244cadd91538711ae6&=&format=webp&quality=lossless&width=633&height=633')">
+                </div>
             </div>
         </div>
-    </div>
 
-    <h2>Rólam:</h2>
-
-    <div class="box">
-        <h5>Szia! Elösször is üdvözöllek a weboldalamon :) Márk vagyok, Szabadidőmben általában játszok vagy rajzolok! Már több mint egy éve foglalkozok grafikák készítésével, és ezt továbbá is folytatni szeretném. Eddig kizárólag Pixel Artokal foglalkoztam digitálisan, viszont a nyáron elkezdem a normális grafikák készítését is. lejebb találhatsz képeket az eddigi munkáimrok. Amennyiben megtetszettek a discordon írj rám és tudok neked is készíteni :) Sokat tudnék még beszélni magamrol viszont ezt a weboldalt nem azért hoztam létre. </h5>
-    </div>
-
-    <div class="gomb">
-        <button id="theme-toggle">Világos Mód</button>
-    </div>
-
-
-
-
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
