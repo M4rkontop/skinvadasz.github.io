@@ -164,6 +164,10 @@ transform: scale(0.9);
   height: 50px;
 }
 
+.store button:hover {
+  height: 50px;
+}
+
 .space {
   flex-grow: 1;
 } 
@@ -176,7 +180,7 @@ transform: scale(0.9);
   border-color: #311933;
   color: white;
   margin-left: 20px;
-  width: 80px;
+  width: 100px;
   border-radius: 15px;
   cursor: pointer;
   border-style: solid;
@@ -186,7 +190,7 @@ transform: scale(0.9);
   background-color: #67386b;
   border-color: #67386b;
   color: white;
-  width: 80px;
+  width: 100px;
   border-radius: 15px;
   cursor: pointer;
   border-style: solid;
@@ -285,7 +289,7 @@ transform: scale(0.9);
 
 .discord {
   font-family: "Archivo Black", sans-serif;
-  padding: 10px 60px;            /* Belső margó (növelve a magasság miatt) */
+  padding: 10px 58px;            /* Belső margó (növelve a magasság miatt) */
   font-size: 16px;               /* Betűméret */
   color: white;                  /* Gombok szövegszíne fehér */
   background-color: #7289da;  /* Gomb háttérszíne átlátszó */
@@ -340,7 +344,8 @@ transform: scale(0.9);
 
 #copyButton1 {
   font-family: "Archivo Black", sans-serif;
-  padding: 1px 25px;            /* Belső margó (növelve a magasság miatt) */
+  height: 50px;
+  width: 200px;         /* Belső margó (növelve a magasság miatt) */
   font-size: 16px;               /* Betűméret */
   color: white;                  /* Gombok szövegszíne fehér */
   background-color: #67386b;  /* Gomb háttérszíne átlátszó */
