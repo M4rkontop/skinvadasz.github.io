@@ -4,31 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chorus | 1.18+</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="kepek/choruslogo.png">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 </style>
 <body>
+    
+    <div class="navbargep" id="menu1">
+        <div class="gombok">
+            <a href="https://chorus.hu"><button class="home">HOME</button></a>
+            <a href="https://chorus.hu/hamarosan"><button class="wiki">WIKI</button></a>
+            <a href="https://chorus.hu/hamarosan"><button class="store">WEBSHOP</button></a>
+            <div class="space"></div> <!-- Ezt a div-et a bal és jobb gombok közé helyezzük -->
+            <button id="copyButton">PLAY.CHORUS.HU</button>
+            <a href="https://discord.gg/chorus"><button class="dc">DISCORD</button></a>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="navbar">
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+    </div>
+    <div class="background" id="menu">
+        <div class="menu-content">
+            <div class="close-button" onclick="toggleMenu()">X</div>
+            <a href="https://chorus.hu"><button class="gomb1" onclick="toggleMenu()">HOME</button></a>
+            <a href="https://chorus.hu/hamarosan"><button class="gomb2" onclick="toggleMenu()">WIKI</button></a>
+            <a href="https://chorus.hu/hamarosan"><button class="gomb3" onclick="toggleMenu()">WEBSHOP</button></a>
+            <button id="copyButton1" onclick="toggleMenu()">PLAY.CHORUS.HU</button>
+            <a href="https://discord.gg/chorus"><button class="discord" onclick="toggleMenu()">DISCORD</button></a>
+        </div>
+    </div>
+
     <header>
         <a href="https://youtu.be/dQw4w9WgXcQ?si=8EZKOLqcpC_eBoQM"><img src="kepek/IMG_0222.png" alt="Header Image"></a>
     </header>
     
     <div class="main-content">
         <h1>A szerver fejlesztés alatt!</h1>
-        <a href="https://discord.com/channels/1249317336733974568/1251948508026503250"><button class="gombok">Spoilerek ^^</button></a>
+        <a href="https://discord.com/channels/1249317336733974568/1251948508026503250"><button class="spoiler">Spoilerek ^^</button></a>
     
         <h1 class="csapattagok">Fejlesztők</h1>
 
         <div class="container">
             <div class="content">
-                <div class="text-content">
-                    <h2 id="title">Majozi (Tulajdonos)</h2>
-                    <p id="description">Majozi vagyok puszi helo</p>
-                </div>
-                <img id="image" class="main-image" src="https://media.discordapp.net/attachments/1290046813268607028/1290051114342809630/majozirender1.png?ex=66fb0d39&is=66f9bbb9&hm=a6df61486234f6d3b21cf82e5e8ef32d28aea7df27b11f7fa03e947d43dd3e35&=&format=webp&quality=lossless&width=633&height=633" alt="Majozi kép">
-        
                 <!-- Team member images as buttons inside the square -->
                 <div class="member-images">
                     <img src="https://media.discordapp.net/attachments/1290046813268607028/1290047100372914196/majozifej.png?ex=66fb097c&is=66f9b7fc&hm=832439c0e188764a3981227433fd37ac8be0c75a28b1b5842ae07371f0a85a05&=&format=webp&quality=lossless" onclick="showMember('Majozi (Tulajdonos)', 'Majozi vagyok puszi helo', 'https://media.discordapp.net/attachments/1290046813268607028/1290051114342809630/majozirender1.png?ex=66fb0d39&is=66f9bbb9&hm=a6df61486234f6d3b21cf82e5e8ef32d28aea7df27b11f7fa03e947d43dd3e35&=&format=webp&quality=lossless&width=633&height=633')">
@@ -36,6 +62,15 @@
                     <img src="https://media.discordapp.net/attachments/1290046813268607028/1290333974119317534/secret.png?ex=66fc14a8&is=66fac328&hm=41b6dc0fe1ace0c9d376b61ba7bc5b3b9bd3a1819aea46358c544a6dc86b52e9&=&format=webp&quality=lossless" alt="Tag 3" onclick="showMember('???', 'Secret 🔒', 'https://media.discordapp.net/attachments/1290046813268607028/1290337366317334809/secretrender.png?ex=66fc17d1&is=66fac651&hm=33fd72701b140067b7479fd280b01b257050d2ac3e8168244cadd91538711ae6&=&format=webp&quality=lossless&width=633&height=633')">
                     <img src="https://media.discordapp.net/attachments/1290046813268607028/1290333974119317534/secret.png?ex=66fc14a8&is=66fac328&hm=41b6dc0fe1ace0c9d376b61ba7bc5b3b9bd3a1819aea46358c544a6dc86b52e9&=&format=webp&quality=lossless" alt="Tag 4" onclick="showMember('???', 'Secret 🔒', 'https://media.discordapp.net/attachments/1290046813268607028/1290337366317334809/secretrender.png?ex=66fc17d1&is=66fac651&hm=33fd72701b140067b7479fd280b01b257050d2ac3e8168244cadd91538711ae6&=&format=webp&quality=lossless&width=633&height=633')">
                 </div>
+        
+                <!-- Text content: Title and description -->
+                <div class="text-content">
+                    <h2 id="title">Majozi (Tulajdonos)</h2>
+                    <p id="description">Bemutatás</p>
+                </div>
+        
+                <!-- Image content -->
+                <img id="image" class="main-image" src="https://media.discordapp.net/attachments/1290046813268607028/1290051114342809630/majozirender1.png?ex=66fe58f9&is=66fd0779&hm=21131307c3e49606a5d2c15c86dd41898db041b7e0ab96e14c5e8dc74a5a4e44&=&format=webp&quality=lossless&width=554&height=554" alt="Majozi kép">
             </div>
         </div>
 
