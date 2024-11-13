@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Font;
+    src: url(font/LeagueSpartan-Bold.ttf);
+}
+
+body {
+    background-color: #363636;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profil {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp {
+    height: 200px;
+    border-radius: 28px;
+    border-style: solid;
+    border-color: #aea7a3;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.pfp:hover {
+    transform: scale(1.05);
+    border-color: #d4cecb;
+    box-shadow: 0px 0px 15px #ffffff77;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #aea7a3;
+    margin-top: 40px;
+    font-family: Font;
+    font-size: 36px;
+    cursor: default;
+    transition: 0.3s;
+}
+
+h1:hover {
+    transform: scale(1.05) rotate(3deg);
+    color: #d4cecb;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Font;
+    height: 80px;
+    width: 60%;
+    border-radius: 16px;
+    background-color:#aea7a3;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.aboutme:hover {
+    transform: scale(1.05);
+    background-color: #d4cecb;
+    box-shadow: 0px 0px 15px #ffffff77;
+}
+
+.dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Font;
+    height: 80px;
+    width: 60%;
+    border-radius: 16px;
+    background-color:#d85353;
+    color: white;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.dev:hover {
+    transform: scale(1.05);
+    background-color: #e97575;
+    box-shadow: 0px 0px 15px #e9757593;
+}
