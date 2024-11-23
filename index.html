@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4rk </title>
+    <title>Minecraft Skinvadász</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="kepek/Pfp.png">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://cdn.example.com/minecraftia.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav></nav>
-    <div class="profil">
-        <a href="https://m4rk.hu/"><img class="pfp" src="kepek/Pfp.png"></a>
+    <div class="logo">
+        <a href="https://skinvadasz.github.io/"><img src="images/logo.png"></a>
     </div>
-    <div class="name">
-        <h1>M4rk._.</h1>
+    <div class="hely">
+        <div class="minden">
+            <div class="nev">
+                <h1 class="name">Minecraft Skinvadász</h1>
+                <p class="version">BÉTA</p>
+            </div>
+            <input required="" type="text" name="text" autocomplete="off" class="input" id="username"  placeholder="Felhasználónév">
+            <button class="gomb" id="searchButton" onclick="getHead()">Keresés</button>
+            <div id="result"></div>
+        </div>
     </div>
-    <div class="box">
-        <p class="aboutme">An hungarian 15 yrs old architecture student</p>
-    </div>
-    <div class="box">
-        <p class="dev">The website is under development</p>
-    </div>
+
+    <a href="https://youtube.com/"><img class="bottom-left" src="images/github.png"></a>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
